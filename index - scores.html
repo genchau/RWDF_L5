@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brighton Times</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/city.png" alt="iconic view of a cityscape">
+        <h1 class="header__title">
+          The Brighton Times
+        </h1>
+        <a id="menu" class="header__menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">News</a></li>
+        <li class="nav__item"><a href="#">Events</a></li>
+        <li class="nav__item"><a href="#">Culture</a></li>
+        <li class="nav__item"><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+    <main>
+	
+      <section class="content">
+        
+
+        <section class="scores">
+          
+		  <div class="contained_table">
+			 <table class="scores__table tg">
+				<thead>
+				  <tr>
+					<th class="tg-p8bj">date</th>
+					<th class="scores__location">location</th>
+					<th class="tg-a8do">team</th>
+					<th class="tg-klww" colspan=2>score</th>
+					
+					<th class="tg-y2tu">team</th>
+				  </tr>
+				</thead>
+				
+				<tbody>
+				  <tr>
+					<td class="tg-p8bj">Friday</td>
+					<td class="scores__location">Washington Capital One Arena</td>
+					<td class="winner tg-a8do">Raptors</td>
+					<td class="winner tg-klww">102</td>
+					<td class="tg-gf23">92</td>
+					<td class="tg-y2tu">Wizards</td>
+				  </tr>
+				  <tr>
+					<td class="tg-p8bj">Friday</td>
+					<td class="scores__location">Indiana Bankers Life Fieldhouse</td>
+					<td class="tg-a8do">Cavaliers</td>
+					<td class="tg-klww">87</td>
+					<td class="winner tg-gf23">121</td>
+					<td class="winner tg-y2tu">Pacers</td>
+				  </tr>
+				  <tr>
+					<td class="tg-p8bj">Friday</td>
+					<td class="scores__location">Utah Vivint Smart Home Arena</td>
+					<td class="tg-a8do">Thunder</td>
+					<td class="tg-klww">91</td>
+					<td class="winner tg-gf23">96</td>
+					<td class="winner tg-y2tu">Jazz</td>
+				  </tr>
+				  <tr>
+					<td class="tg-p8bj">Saturday</td>
+					<td class="scores__location">Boston TD Garden</td>
+					<td class="tg-a8do">Bucks</td>
+					<td class="tg-klww">96</td>
+					<td class="winner tg-gf23">112</td>
+					<td class="winner tg-y2tu">Celtics</td>
+				  </tr>
+				  <tr>
+					<td class="tg-p8bj">Saturday</td>
+					<td class="scores__location">Golden State Oracle Arena</td>
+					<td class="tg-a8do">Pelicans</td>
+					<td class="tg-klww">101</td>
+					<td class="winner tg-gf23">123</td>
+					<td class="winner tg-y2tu">Warriors</td>
+				  </tr>
+				</tbody>
+			</table>
+		  </div>
+		  
+		  
+        </section>
+		
+		<br>
+		<br>
+        
+      </section>
+	  <br>
+	  <br>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+  </body>
+</html>
