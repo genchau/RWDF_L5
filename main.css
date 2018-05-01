@@ -170,11 +170,19 @@ main {
 	height: 100%;
 }
 .hero2-text {
+	position: absolute;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+/*
+.hero2-text {
 	position: relative;
 	margin-top: -9em;
 	padding: 0.5em 0.5em;
 	background: rgba(0, 0, 0, 0.4);
 }
+*/
 
 .hero article {
   box-sizing: border-box;
@@ -285,7 +293,7 @@ main {
 }
 
 .scores__location {
-	font-size: 0.7em;
+	font-size: 0.8em;
 	color: purple;
 }
 
